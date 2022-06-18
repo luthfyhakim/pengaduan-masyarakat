@@ -34,12 +34,18 @@ composer --version
 ```sh
 composer install
 ```
-### 4. Running App
+### 4. Configure .env
+Pada file .env.example rename menjadi .env kemudian jalankan perintah: 
+```sh
+php artisan key:generate
+```
+
+### 5. Running App
 defaut host port running dev http://localhost:8000
 ```sh
 php artisan serve
 ```
-### 5. Create Table and Database
+### 6. Create Table and Database
 - Database phpmyadmin : pengaduan_masyarakat
 - Table : 
     ```sh
