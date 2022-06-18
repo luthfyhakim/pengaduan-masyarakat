@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;1,400&display=swap");
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.light {
+    font-weight: 300;
+}
+
+.medium {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.semi-bold {
+    font-weight: 600;
+}
+
+.photo {
+    width: 70px;
+    height: 70px;
+    float: left;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+.tab {
+    color: #000;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 0px 6px 10px 6px;
+}
+
+.tab:hover {
+    color: #6a70fc;
+    text-decoration: none;
+    font-weight: 300;
+    padding: 0px 6px 10px 6px;
+    border-bottom: 2px solid #6a70fc;
+}
+
+.tab-active {
+    font-size: 20px;
+    border-bottom: 2px solid #6a70fc;
+    color: #6a70fc;
+    padding-bottom: 10px;
+}
+
+hr {
+    margin-top: 9px;
+}
+
+.laporan-top {
+    padding-top: 16px;
+}
+
+.laporan-top .profile {
+    width: 50px;
+    height: 50px;
+    float: left;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+.laporan-top p {
+    font-weight: 300;
+    font-size: 16px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.laporan-mid .judul-laporan {
+    font-size: 500;
+    font-size: 18px;
+    color: #6a70fc;
+    margin-top: 24px;
+}
+
+.laporan-mid p {
+    font-weight: 300;
+    font-size: 14px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.laporan-bottom {
+    margin-bottom: 24px;
+}
+
+.laporan-bottom img {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/*# sourceMappingURL=laporan.css.map */
