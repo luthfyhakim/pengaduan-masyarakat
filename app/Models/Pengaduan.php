@@ -8,8 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Pengaduan extends Model
 {
     use HasFactory;
+
     protected $table = 'pengaduan';
+
     protected $primaryKey = 'id_pengaduan';
+
     protected $fillable = [
         'tgl_pengaduan',
         'nik',
@@ -17,5 +20,11 @@ class Pengaduan extends Model
         'foto',
         'status',
     ];
+
+    protected $dates = ['tgl_pengaduan'];
+
+    public function user(){
+        return $this->hasOne(Masyarakat::class, 'nik', 'nik');
+    }
 
 }
