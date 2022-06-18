@@ -15,7 +15,7 @@ class UserController extends Controller
 {
     public function index()
     {
-        return view('user.landing');
+        return view('User.landing');
     }
 
     public function login(Request $request)
@@ -41,11 +41,11 @@ class UserController extends Controller
         }
     }
 
-    //mengarahkan ke halaman register  
+    //mengarahkan ke halaman register
 
     public function formRegister()
     {
-        return view('user.register');
+        return view('User.register');
     }
 
     public function register(Request $request)
@@ -104,7 +104,7 @@ class UserController extends Controller
             return redirect()->back()->withInput()->withErrors($validate);
         }
 
-        //jika foto berhasil dikirm akan dipindah kan oleh pengkondisian ini 
+        //jika foto berhasil dikirm akan dipindah kan oleh pengkondisian ini
         if ($request->file('foto')) {
             $data['foto'] = $request->file('foto')->store('assets/pengaduan', 'public');
         }
