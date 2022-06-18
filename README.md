@@ -6,10 +6,10 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
-<br>
 
 
 ## INSTALLATION APP
+<p>This project using laravel version 9 and php 8</p>
 
 ### 1. Install PHP and Composer
 - Download PHP at https://www.php.net/downloads.php recommended version 8.0.0 or newer
@@ -21,7 +21,6 @@ php --version
 ```sh
 composer --version
 ```
-
 ### 2. Clone Repository Project App
 - Clone with `ssh`
     ```sh
@@ -31,12 +30,30 @@ composer --version
     ```sh
     https://github.com/luthfyhakim/pengaduan-masyarakat.git
     ```
-### 3. Running App
+### 3. Install Dependency
+```sh
+composer install
+```
+### 4. Running App
 defaut host port running dev http://localhost:8000
 ```sh
 php artisan serve
 ```
-
+### 5. Create Table and Database
+- Database phpmyadmin : pengaduan_masyarakat
+- Table : 
+    ```sh
+    php artisan make:model Masyarakat -m 
+    ```
+    ```sh
+    php artisan make:model Petugas -m 
+    ```
+    ```sh
+    php artisan make:model Tanggapan -m 
+    ```
+    ```sh
+    php artisan make:model Pengaduan -m 
+    ```
 
 ## About Laravel
 
