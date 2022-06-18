@@ -30,12 +30,16 @@ composer --version
     ```sh
     https://github.com/luthfyhakim/pengaduan-masyarakat.git
     ```
-### 3. Running App
+### 3. Install Dependency
+```sh
+composer install
+```
+### 4. Running App
 defaut host port running dev http://localhost:8000
 ```sh
 php artisan serve
 ```
-### 4. Create Table and Database
+### 5. Create Table and Database
 - Database phpmyadmin : pengaduan_masyarakat
 - Table : 
     ```sh
