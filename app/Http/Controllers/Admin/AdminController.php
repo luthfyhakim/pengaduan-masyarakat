@@ -24,20 +24,20 @@ class AdminController extends Controller
         if (!$username){
             return redirect()->back()->with(['pesan' => 'USERNAME TIDAK TERDAFTAR!']);
         }
-        
+
         $password = Hash::check($request->password, $username->password);
-        
+
         if (!$password){
             return redirect()->back()->with(['pesan' => 'PASSWORD TIDAK SESUAI!']);
         }
 
         $auth = Auth::guard('admin')->attempt(['username' => $request->username, 'password' => $request->password]);
 
-            if(!$auth){
+            if($auth){
                 return redirect()->route('dashboard.index');
             } else {
                 return redirect()->back()->with(['pesan' => 'AKUN TIDAK TERDAFTAR']);
-            }      
+            }
     }
 
     public function logout()
