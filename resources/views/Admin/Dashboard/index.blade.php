@@ -1,14 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HALAMAN DASHBOARD</title>
-</head>
-<body>
+@extends('layouts.admin')
 
-    <h1>hello world</h1>
-    
-</body>
-</html>
+@section('title', 'Halaman Dashboard')
+
+@section('header', 'Dashboard')
+
+@section('content')
+    <div class="row">
+        <div class="col-lg-3">
+            <div class="card">
+                <div class="card-header">Petugas</div>
+                <div class="card-body">
+                    <div class="text-center">
+                        {{ $petugas }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="card">
+                <div class="card-header">Masyarakat</div>
+                <div class="card-body">
+                    <div class="text-center">
+                        {{ $masyarakat }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="card">
+                <div class="card-header">Pengaduan Proses</div>
+                <div class="card-body">
+                    <div class="text-center">
+                        {{ $proses }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="card">
+                <div class="card-header">Pengaduan Selesai</div>
+                <div class="card-body">
+                    <div class="text-center">
+                        {{ $selesai }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+@endsection

@@ -24,9 +24,9 @@ class AdminController extends Controller
         if (!$username){
             return redirect()->back()->with(['pesan' => 'USERNAME TIDAK TERDAFTAR!']);
         }
-        
+
         $password = Hash::check($request->password, $username->password);
-        
+
         if (!$password){
             return redirect()->back()->with(['pesan' => 'PASSWORD TIDAK SESUAI!']);
         }
@@ -37,7 +37,7 @@ class AdminController extends Controller
                 return redirect()->route('dashboard.index');
             } else {
                 return redirect()->back()->with(['pesan' => 'AKUN TIDAK TERDAFTAR']);
-            }      
+            }
     }
 
     public function logout()

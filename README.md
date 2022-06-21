@@ -30,6 +30,11 @@ composer --version
     ```sh
     https://github.com/luthfyhakim/pengaduan-masyarakat.git
     ```
+
+switch to the repo folder
+```sh
+cd pengaduan-masyarakat
+```
 ### 3. Install Dependency
 ```sh
 composer install
@@ -39,27 +44,17 @@ Pada file .env.example rename menjadi .env kemudian jalankan perintah:
 ```sh
 php artisan key:generate
 ```
-
-### 5. Running App
+### 5. Create Database and Migrations
+- Create database (sql) nama : pengaduan_masyarakat
+- Kemudian migrate model table :
+```sh
+php artisan migrate
+```
+### 6. Running App
 defaut host port running dev http://localhost:8000
 ```sh
 php artisan serve
 ```
-### 6. Create Table and Database
-- Database phpmyadmin : pengaduan_masyarakat
-- Table : 
-    ```sh
-    php artisan make:model Masyarakat -m 
-    ```
-    ```sh
-    php artisan make:model Petugas -m 
-    ```
-    ```sh
-    php artisan make:model Tanggapan -m 
-    ```
-    ```sh
-    php artisan make:model Pengaduan -m 
-    ```
 
 ## About Laravel
 
