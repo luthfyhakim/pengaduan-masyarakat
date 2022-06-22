@@ -85,7 +85,7 @@ class UserController extends Controller
     {
         Auth::guard('masyarakat')->logout();
 
-        return redirect()->back();
+        return redirect()->route('pekat.index');
     }
 
     public function storePengaduan(Request $request)
