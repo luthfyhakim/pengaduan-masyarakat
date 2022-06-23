@@ -5,10 +5,10 @@
 @section('header', 'Dashboard')
 
 @section('content')
-    <div class="row">
+    <div class="row ">
         <div class="col-lg-3">
             <div class="card">
-                <div class="card-header">Petugas</div>
+                <div class="card-header bg-secondary text-white">Petugas</div>
                 <div class="card-body">
                     <div class="text-center">
                         {{ $petugas }}
@@ -18,7 +18,7 @@
         </div>
         <div class="col-lg-3">
             <div class="card">
-                <div class="card-header">Masyarakat</div>
+                <div class="card-header bg-secondary text-white">Masyarakat</div>
                 <div class="card-body">
                     <div class="text-center">
                         {{ $masyarakat }}
@@ -28,7 +28,7 @@
         </div>
         <div class="col-lg-3">
             <div class="card">
-                <div class="card-header">Pengaduan Proses</div>
+                <div class="card-header bg-warning text-white">Pengaduan Proses</div>
                 <div class="card-body">
                     <div class="text-center">
                         {{ $proses }}
@@ -38,7 +38,7 @@
         </div>
         <div class="col-lg-3">
             <div class="card">
-                <div class="card-header">Pengaduan Selesai</div>
+                <div class="card-header bg-success text-white">Pengaduan Selesai</div>
                 <div class="card-body">
                     <div class="text-center">
                         {{ $selesai }}

@@ -3,9 +3,15 @@
 @section('css')
 <link rel="stylesheet" href="{{ asset('css/landing.css') }}">
 <link rel="stylesheet" href="{{ asset('css/laporan.css') }}">
+
+<style>
+    body{
+        background: #FAC213;
+    }
+</style>
 @endsection
 
-@section('title', 'PEKAT - Pengaduan Masyarakat')
+@section('title', 'APLIKASI - Pengaduan Masyarakat')
 
 @section('content')
 {{-- Section Header --}}
@@ -14,7 +20,7 @@
         <div class="container">
             <div class="container-fluid">
                 <a class="navbar-brand" href="{{ route('pekat.index') }}">
-                    <h4 class="semi-bold mb-0 text-white">PEKAT</h4>
+                    <h4 class="semi-bold mb-0 text-white">APLIKASI</h4>
                     <p class="italic mt-0 text-white">Pengaduan Masyarakat</p>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -39,7 +45,7 @@
                                 data-target="#loginModal">Masuk</button>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ route('pekat.formRegister') }}" class="btn btn-outline-purple">Daftar</a>
+                            <a href="{{ route('pekat.formRegister') }}" class="btn btn-outline-warning">Daftar</a>
                         </li>
                     </ul>
                     @endauth
@@ -81,7 +87,7 @@
                 <div>
                     <img src="{{ asset('images/user_default.svg') }}" alt="user profile" class="photo">
                     <div class="self-align">
-                        <h5><a style="color: #6a70fc" href="#">{{ Auth::guard('masyarakat')->user()->nama }}</a></h5>
+                        <h5><a style="color: #FAC213" href="#">{{ Auth::guard('masyarakat')->user()->nama }}</a></h5>
                         <p class="text-dark">{{ Auth::guard('masyarakat')->user()->username }}</p>
                     </div>
                     <div class="row text-center">
@@ -163,7 +169,7 @@
 <div class="mt-5">
     <hr>
     <div class="text-center">
-        <p class="italic text-secondary">© 2021 Ihsanfrr • All rights reserved</p>
+        <p class="italic text-secondary">© Rekayasa perangkat Lunak • All rights reserved</p>
     </div>
 </div>
 @endsection
