@@ -14,11 +14,11 @@
 
 <style>
     body {
-        background: #6a70fc;
+        background: #4f4914;
     }
 
     .btn-purple {
-        background: #6a70fc;
+        background: #ffd902;
         width: 100%;
         color: #fff;
     }
