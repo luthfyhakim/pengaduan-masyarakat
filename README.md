@@ -49,6 +49,12 @@ php artisan key:generate
 - Kemudian migrate model table :
 ```sh
 php artisan migrate
+
+jika ada error sanctum
+
+jalankan:
+
+composer require laravel/sanctum
 ```
 ### 6. Running App
 defaut host port running dev http://localhost:8000
