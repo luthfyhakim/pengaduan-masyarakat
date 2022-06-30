@@ -24,12 +24,7 @@
       background: #FFE7BF;
     }
 
-    .card-tutor:hover{
-      width: 20%;
-      height: 103px;
-      background: #A5BECC;
-      transition: all 0.2s ease-in;
-    }
+  
 
   </style>
 </head>
@@ -105,7 +100,7 @@
   <div id="how" class="container my-20 mx-auto px-4 md:px-12">
     <div class="flex flex-wrap -mx-1 lg:-mx-4">
       <!-- Column -->
-      <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4 card-tutor">
+      <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
         <!-- Article -->
         <article class="overflow-hidden rounded-lg shadow-lg  text-gray-800">
           <img alt="Tulis"
@@ -122,7 +117,7 @@
       </div>
       <!-- END Column -->
       <!-- Column -->
-      <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4 card-tutor">
+      <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
         <!-- Article -->
         <article class="overflow-hidden rounded-lg shadow-lg text-gray-800">
           <img alt="Proses"
@@ -139,7 +134,7 @@
       </div>
       <!-- END Column -->
       <!-- Column -->
-      <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4 card-tutor">
+      <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
         <!-- Article -->
         <article class="overflow-hidden rounded-lg shadow-lg  text-gray-800">
           <img alt="Ditindak"
@@ -156,7 +151,7 @@
       </div>
       <!-- END Column -->
       <!-- Column -->
-      <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4 card-tutor">
+      <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
         <!-- Article -->
         <article class="overflow-hidden rounded-lg shadow-lg  text-gray-800">
           <img alt="Selesai"
