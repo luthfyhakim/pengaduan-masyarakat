@@ -2,13 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
 use App\Models\Pengaduan;
-use App\Models\Tanggapan;
-use App\Models\User;
-use PDF;
+
+use Barryvdh\DomPDF\PDF;
 
 
 class AdminController extends Controller
