@@ -8,12 +8,26 @@ use Illuminate\Database\Eloquent\Model;
 class Tanggapan extends Model
 {
     use HasFactory;
-    protected $table = 'tanggapan';
-    protected $primaryKey = 'id_tanggapan';
+
     protected $fillable = [
-        'id_pengaduan',
-        'tgl_tanggapan',
-        'tanggapan',
-        'id_petugas',
+        'id', 'pengaduan_id', 'tanggapan', 'petugas_id',
     ];
+
+    protected $hidden = [
+    
+    ];
+
+    public function pengaduan()
+    {
+    	return $this->hasOne(Pengaduan::class,'id', 'id');
+    }
+
+    public function proses()
+    {
+    return $this->hasMany(Pengaduan::class, 'status_id','status');
+    }
+
+    public function country() {
+        return $this->hasOne(Pengaduan::class);
+    }
 }
