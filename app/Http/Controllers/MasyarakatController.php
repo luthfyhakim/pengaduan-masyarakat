@@ -49,7 +49,7 @@ class MasyarakatController extends Controller
         'description' => 'required',
         'image' => 'required',
         ]);
-        
+
         $nik = Auth::user()->nik;
         $id = Auth::user()->id;
         $name = Auth::user()->name;
@@ -59,9 +59,9 @@ class MasyarakatController extends Controller
         $data['user_id']=$id;
         $data['name']=$name;
         $data['image'] = $request->file('image')->store('assets/laporan', 'public');
-        
-        
-        
+
+
+
         Alert::success('Berhasil', 'Pengaduan terkirim');
         Pengaduan::create($data);
         return redirect('user');
@@ -75,15 +75,16 @@ class MasyarakatController extends Controller
      */
 
     public function lihat() {
-        
 
-        $user = Auth::user()->pengaduan()->get();
-    
 
-        $items = Pengaduan::get();
+        // $user = Auth::user()->pengaduan()->get();
+        $user = Auth::user()->nik;
+
+
+        $items = Pengaduan::all();
 
         return view('pages.masyarakat.detail', [
-            'items' => $user
+            'items' => $items
         ]);
 
     }
@@ -93,9 +94,9 @@ class MasyarakatController extends Controller
         $item = Pengaduan::with([
         'details', 'user'
         ])->findOrFail($id);
-        
+
         $tangap = Tanggapan::where('pengaduan_id',$id)->first();
-        
+
         return view('pages.masyarakat.show',[
         'item' => $item,
         'tangap' => $tangap

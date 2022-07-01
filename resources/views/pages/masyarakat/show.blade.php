@@ -22,7 +22,7 @@ Dashboard
           <h2 class="mt-4">NIK : {{ $ite->user_nik }}</h2>
           <h2 class="mt-4">No Telepon : {{ $item->user->phone }}</h2>
           <h2 class="mt-4">Tanggal : {{ $ite->created_at->format('l, d F Y - H:i:s') }}</h2>
-          <h2 class="mt-4">Status : 
+          <h2 class="mt-4">Status :
             @if($item->status =='Belum di Proses')
             <span
                   class="px-2 py-1 font-semibold leading-tight text-red-700 bg-red-100 rounded-md dark:text-red-100 dark:bg-red-700">
