@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>APLIKASI | Pengaduan Masyarakat</title>
 
+  {{-- font awesome --}}
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+
+
   <link href="{{ asset('css/app.css') }}" rel="stylesheet">
   <link rel="icon" href="{{ asset('img/favicon.svg')}}">
   <style>
@@ -97,17 +102,19 @@
   </div>
 
   <!-- How -->
-  <div id="how" class="container my-20 mx-auto px-4 md:px-12">
+  <div id="how" class="container my-20 mx-auto px-4 md:px-12 ">
     <div class="flex flex-wrap -mx-1 lg:-mx-4">
       <!-- Column -->
-      <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
+      <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4 hover:bg-red-400 rounded-full">
         <!-- Article -->
         <article class="overflow-hidden rounded-lg shadow-lg  text-gray-800">
           <img alt="Tulis"
             class="block h-auto w-full lg:w-28 mx-auto my-10 transform transition hover:scale-125 duration-300 ease-in-out"
             src="{{ asset('img/tulis.svg')}}" />
           <header class="leading-tight p-2 md:p-4 text-center ">
-            <h1 class="text-lg font-bold">Tulis Laporan --></h1>
+            <h1 class="text-lg font-bold">Kirim Laporan<svg class="w-8 inline-block" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
+            </svg></h1>
             <p class="text-grey-darker text-sm py-4">
               Tulis laporan keluhan Anda dengan jelas.
             </p>
@@ -124,7 +131,9 @@
             class="block h-auto w-full lg:w-28 mx-auto my-10 transform transition hover:scale-125 duration-300 ease-in-out"
             src="{{ asset('img/processing.svg')}}" />
           <header class="leading-tight p-2 md:p-4 text-center">
-            <h1 class="text-lg font-bold">Proses Verifikasi --></h1>
+            <h1 class="text-lg font-bold">Proses Verifikasi<svg class="w-8 inline-block" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
+            </svg> </h1>
             <p class="text-grey-darker text-sm py-4">
               Tunggu sampai laporan Anda di verifikasi.
             </p>
@@ -141,7 +150,9 @@
             class="block h-auto w-full lg:w-28 mx-auto my-10 transform transition hover:scale-125 duration-300 ease-in-out"
             src="{{ asset('img/act.svg')}}" />
           <header class="leading-tight p-2 md:p-4 text-center">
-            <h1 class="text-lg font-bold">Tindak Lanjut --></h1>
+            <h1 class="text-lg font-bold">Tindak Lanjut<svg class="w-8 inline-block" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
+            </svg></h1>
             <p class="text-grey-darker text-sm py-4">
               Laporan Anda sedang dalam tindak lanjut.
             </p>
@@ -158,7 +169,9 @@
             class="block h-auto w-full lg:w-28 mx-auto my-10 transform transition hover:scale-125 duration-300 ease-in-out"
             src="{{ asset('img/verification.svg')}}" />
           <header class="leading-tight p-2 md:p-4 text-center">
-            <h1 class="text-lg font-bold">Selesai</h1>
+            <h1 class="text-lg font-bold">Selesai<svg class="w-8 inline-block" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+            </svg></h1>
             <p class="text-grey-darker text-sm py-4">
               Laporan pengaduan telah selesai ditindak.
             </p>
