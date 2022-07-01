@@ -11,15 +11,19 @@
 ## INSTALLATION APP
 <p>This project using laravel version 9 and php 8</p>
 
-### 1. Install PHP and Composer
-- Download PHP at https://www.php.net/downloads.php recommended version 8.0.0 or newer
-- Download composer at https://getcomposer.org/
-- Check success install PHP and composer
+### 1. Install PHP, Composer, and Yarn
+- Download PHP https://www.php.net/downloads.php recommended version 8.0.0 or newer
+- Download composer https://getcomposer.org/
+- Download yarn https://classic.yarnpkg.com/en/
+- Check if success install PHP and composer
 ```sh
 php --version
 ```
 ```sh
 composer --version
+```
+```sh
+yarn --version
 ```
 ### 2. Clone Repository Project App
 - Clone with `ssh`
@@ -39,6 +43,9 @@ cd pengaduan-masyarakat
 ```sh
 composer install
 ```
+```sh
+yarn
+```
 ### 4. Configure .env
 Pada file .env.example rename menjadi .env kemudian jalankan perintah: 
 ```sh
@@ -49,11 +56,10 @@ php artisan key:generate
 - Kemudian migrate model table :
 ```sh
 php artisan migrate
+```
 
-jika ada error sanctum
-
-jalankan:
-
+- Jika ada error sanctum, jalankan:
+```sh
 composer require laravel/sanctum
 ```
 ### 6. Running App
