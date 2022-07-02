@@ -23,7 +23,7 @@ class AdminController extends Controller
             'details', 'user'
         ])->findOrFail($id);
 
-        return view('pages.admin.tanggapan.add',[
+        return view('pages.admin.pengaduan.detail',[
         'item' => $item
         ]);
     }

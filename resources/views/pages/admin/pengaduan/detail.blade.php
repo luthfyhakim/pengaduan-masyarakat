@@ -22,7 +22,7 @@ Detail Pengaduan
           <h2 class="mt-4">NIK : {{ $ite->user_nik }}</h2>
           <h2 class="mt-4">No Telepon : {{ $item->user->phone }}</h2>
           <h2 class="mt-4">Tanggal : {{ $ite->created_at->format('l, d F Y - H:i:s') }}</h2>
-          <h2 class="mt-4">Status : 
+          <h2 class="mt-4">Status :
             @if($item->status =='Belum di Proses')
             <span
                   class="px-2 py-1 font-semibold leading-tight text-red-700 bg-red-100 rounded-md dark:text-red-100 dark:bg-red-700">
@@ -60,7 +60,6 @@ Detail Pengaduan
           <div class="text-center flex-1">
             <h1 class="mb-8 font-semibold">Tanggapan</h1>
             <p class="text-gray-800 dark:text-gray-400">
-
               @if (empty($tangap->tanggapan))
               Belum ada tanggapan
               @else
