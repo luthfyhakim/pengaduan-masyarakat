@@ -1,7 +1,7 @@
 <header class="z-10 py-4 bg-white shadow-md dark:bg-gray-800">
-  <div class="container flex items-center justify-end h-full px-6 mx-auto text-purple-600 dark:text-purple-300">
+  <div class="container flex items-center justify-end h-full px-6 mx-auto text-red-600 dark:text-red-300">
     <!-- Mobile hamburger -->
-    <button class=" p-1 mr-5 -ml-1 rounded-md md:hidden focus:outline-none focus:shadow-outline-purple"
+    <button class=" p-1 mr-5 -ml-1 rounded-md md:hidden focus:outline-none focus:shadow-outline-red"
       @click="toggleSideMenu" aria-label="Menu">
       <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
         <path fill-rule="evenodd"
@@ -13,7 +13,7 @@
     <ul class="flex items-center flex-shrink-2 space-x-6">
       <!-- Theme toggler -->
       <li class="flex">
-        <button class="rounded-md focus:outline-none focus:shadow-outline-purple" @click="toggleTheme"
+        <button class="rounded-md focus:outline-none focus:shadow-outline-red" @click="toggleTheme"
           aria-label="Toggle color mode">
           <template x-if="!dark">
             <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
@@ -35,7 +35,7 @@
 
       <!-- Profile menu -->
       <li class="relative">
-        <button class="align-middle rounded-full focus:shadow-outline-purple focus:outline-none"
+        <button class="align-middle rounded-full focus:shadow-outline-red focus:outline-none"
           @click="toggleProfileMenu" @keydown.escape="closeProfileMenu" aria-label="Account" aria-haspopup="true">
           <img class="object-cover w-8 h-8 rounded-full"
             src="https://shanghai-date.com/uploads/g/t/t/h/q2t34kjldqrqv0pl7ihh.png" alt="" aria-hidden="true" />

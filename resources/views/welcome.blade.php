@@ -2,179 +2,197 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>APLIKASI | Pengaduan Masyarakat</title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-  <link rel="icon" href="{{ asset('img/favicon.svg')}}">
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
+  <title>APLIKASi | Pengaduan Masyarakat</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-    .bg-ku{
-      background: #A5BECC ;
-    }
+  <!-- Favicons -->
+  <link href="assets/img/logo.svg" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-    .text-lapor{
-      color: #563a18;
-    }
-    .btn-lapor{
-      background: #FFE7BF;
-    }
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+
+  @include('includes.landing.stylesheet')
+  
+  
+  <!-- =======================================================
+    * Template Name: Vesperr - v4.7.0
+    * Template URL: https://bootstrapmade.com/vesperr-free-bootstrap-template/
+    * Author: BootstrapMade.com
+    * License: https://bootstrapmade.com/license/
+    ======================================================== -->
+  </head>
+  
+  <body>
+    
+    @include('includes.landing.navbar')
+  
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h1 data-aos="fade-up">Layanan Laporan Masyarakat Berbasis Online</h1>
+          <h2 data-aos="fade-up" data-aos-delay="400">Sampaikan laporan masalah Anda di sini, kami akan memprosesnya dengan cepat , aman dan nyaman.</h2>
+          <div data-aos="fade-up" data-aos-delay="800">
+            <a href="{{ url('login')}}" class="btn-get-started scrollto">Laporkan!</a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="200">
+          <img src="assets/img/hero.svg" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Tentang Kami</h2>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">  
+            <p>
+              <h3>APLIKASIKU</h3> adalah sistem laporan pengaduan masyarakat yang dibuat untuk memudahkan masyarakat untuk memberikan laporan atau informasi kepada pemerintah
+            </p>
+            <ul>
+              <h3>Tujuan APLIKASIKU</h3>
+              <li><i class="ri-check-double-line"></i>Memberikan Informasi atau laporan yang jelas kepada pemerintah supaya bisa ditindak lebih lanjut</li>
+              <li><i class="ri-check-double-line"></i>Mempermudah masyarakat untuk berkomunikasi dengan pemerintahan</li>
+            </ul>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <p>
+              <h4>APLIKASIKU</h4>merupakan komitmen  kami untuk melayani masyarakat. Dengan hadirnya sistem pelaporan pengaduan online ini, diharapkan setiap suara masyarakat bisa didengar dan ditindaklanjuti oleh pemerintah.
+            </p>
+            <a href="#services" class="btn-learn-more">Tata cara atau alur pengaduan</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+      <div class="container">
+
+        <div class="row">
+          <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-xl-start" data-aos="fade-right" data-aos-delay="150">
+            <img src="assets/img/counts-img.svg" alt="" class="img-fluid">
+          </div>
+
+          <div class="col-xl-7 d-flex align-items-stretch pt-4 pt-xl-0" data-aos="fade-left" data-aos-delay="300">
+            <div class="content d-flex flex-column justify-content-center">
+              <div class="row">
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-emoji-smile"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="65" data-purecounter-duration="1" class="purecounter"></span>
+                    <p><strong>Pengguna</strong><br>DAFTAR pengguna APLIKASIKU</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-journal-richtext"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="1" class="purecounter"></span>
+                    <p><strong>Pengaduan</strong> <br> Jumlah pengaduan yg sudah dilaporkan</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-clock"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="18" data-purecounter-duration="1" class="purecounter"></span>
+                    <p><strong>Tuntas</strong> <br> Jumlah laporan yg sudah ditangani</p>
+                  </div>
+                </div>
+
+
+              </div>
+            </div><!-- End .content-->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>TATA CARA</h2>
+          <p>Nah ini dia alur pelaporan yang ada website APLIKASIKU</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4 class="title"><a href="">Kirim Laporan</a></h4>
+              <p class="description">Tulis laporan keluhan Anda dengan jelas.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4 class="title"><a href="">Proses Verifikasi</a></h4>
+              <p class="description">Tunggu sampai laporan Anda di verifikasi oleh admin/petugas.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4 class="title"><a href="">Tindak Lanjut</a></h4>
+              <p class="description">Laporan Anda sedang dalam diproses dan ditindak lanjut.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4 class="title"><a href="">Selesai</a></h4>
+              <p class="description">Laporan pengaduan telah selesai ditindak.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+
+    @include('includes.landing.footer')
+
+   
 
   
 
-  </style>
-</head>
 
-<body class="leading-normal tracking-normal" style="font-family: 'Montserrat', sans-serif">
 
-  <nav class="flex items-center justify-between flex-wrap bg-ku p-7 px-20">
-    <div class="flex items-center flex-shrink-0 text-black mr-6">
-      <img src="{{ asset('img/logo.svg')}}" alt=""
-        class="transform transition hover:scale-125 duration-300 ease-in-out" />
-      <span class="font-bold tracking-wider text-xl text-black">
-        &nbsp APLIKASIKU</span>
-    </div>
-    <div class="block lg:hidden ">
-      <button
-        class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-black hover:border-black">
-        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-          <title>Menu</title>
-          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-        </svg>
-      </button>
-    </div>
-    <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto text-center">
-      <div class="text-md lg:flex-grow">
-        <a href="/" class="block mt-4 lg:inline-block lg:mt-0 text-black mr-4 text-black">
-          Home
-        </a>
-        <a href="#how" class="block mt-4 lg:inline-block lg:mt-0 text-black mr-4 text-black">
-          Tata Cara
-        </a>
-      </div>
-      <div>
-        <button
-          class="text-black font-normal rounded-md py-3 border-black px-4 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out text-black">
-          <a href="{{ url('login')}}">Masuk</a>
-        </button>
-        <button
-          class="text-white-500 font-medium rounded-md py-3 px-4 border-2 border-white focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out text-white">
-          <a href="{{ url('register')}}">Daftar</a>
-        </button>
-      </div>
-    </div>
-  </nav>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Header -->
+  @include('includes.landing.javascript')
 
-  <!--Hero-->
-  <div class="pt-20 px-16 bg-ku">
-    <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
-      <!--Left Col-->
-      <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left text-gray-800">
-        <h1 class="my-4 text-4xl font-bold leading-tight text-black">
-          Layanan Pengaduan Masyarakat Berbasis Online
-        </h1>
-        <p class="leading-normal text-1xl mb-8 text-black">
-          Sampaikan laporan masalah Anda di sini, kami akan memprosesnya
-          dengan cepat , aman dan nyaman.
-        </p>
-        <button
-          class="mx-auto lg:mx-0  font-bold rounded-md my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out btn-lapor text-lapor">
-          <a href="{{ url('login')}}">Laporkan!</a>
-        </button>
-      </div>
-      <!--Right Col-->
-      <div class="w-full md:w-3/5 text-center">
-        <img class="object-fill mx-36 transform transition hover:scale-110 duration-300 ease-in-out"
-          src="{{ asset('img/hero.svg')}}" />  
-      </div>
-    </div>
-  </div>
-
-  <!-- How -->
-  <div id="how" class="container my-20 mx-auto px-4 md:px-12">
-    <div class="flex flex-wrap -mx-1 lg:-mx-4">
-      <!-- Column -->
-      <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
-        <!-- Article -->
-        <article class="overflow-hidden rounded-lg shadow-lg  text-gray-800">
-          <img alt="Tulis"
-            class="block h-auto w-full lg:w-28 mx-auto my-10 transform transition hover:scale-125 duration-300 ease-in-out"
-            src="{{ asset('img/tulis.svg')}}" />
-          <header class="leading-tight p-2 md:p-4 text-center ">
-            <h1 class="text-lg font-bold">Tulis Laporan --></h1>
-            <p class="text-grey-darker text-sm py-4">
-              Tulis laporan keluhan Anda dengan jelas.
-            </p>
-          </header>
-        </article>
-        <!-- END Article -->
-      </div>
-      <!-- END Column -->
-      <!-- Column -->
-      <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
-        <!-- Article -->
-        <article class="overflow-hidden rounded-lg shadow-lg text-gray-800">
-          <img alt="Proses"
-            class="block h-auto w-full lg:w-28 mx-auto my-10 transform transition hover:scale-125 duration-300 ease-in-out"
-            src="{{ asset('img/processing.svg')}}" />
-          <header class="leading-tight p-2 md:p-4 text-center">
-            <h1 class="text-lg font-bold">Proses Verifikasi --></h1>
-            <p class="text-grey-darker text-sm py-4">
-              Tunggu sampai laporan Anda di verifikasi.
-            </p>
-          </header>
-        </article>
-        <!-- END Article -->
-      </div>
-      <!-- END Column -->
-      <!-- Column -->
-      <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
-        <!-- Article -->
-        <article class="overflow-hidden rounded-lg shadow-lg  text-gray-800">
-          <img alt="Ditindak"
-            class="block h-auto w-full lg:w-28 mx-auto my-10 transform transition hover:scale-125 duration-300 ease-in-out"
-            src="{{ asset('img/act.svg')}}" />
-          <header class="leading-tight p-2 md:p-4 text-center">
-            <h1 class="text-lg font-bold">Tindak Lanjut --></h1>
-            <p class="text-grey-darker text-sm py-4">
-              Laporan Anda sedang dalam tindak lanjut.
-            </p>
-          </header>
-        </article>
-        <!-- END Article -->
-      </div>
-      <!-- END Column -->
-      <!-- Column -->
-      <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
-        <!-- Article -->
-        <article class="overflow-hidden rounded-lg shadow-lg  text-gray-800">
-          <img alt="Selesai"
-            class="block h-auto w-full lg:w-28 mx-auto my-10 transform transition hover:scale-125 duration-300 ease-in-out"
-            src="{{ asset('img/verification.svg')}}" />
-          <header class="leading-tight p-2 md:p-4 text-center">
-            <h1 class="text-lg font-bold">Selesai</h1>
-            <p class="text-grey-darker text-sm py-4">
-              Laporan pengaduan telah selesai ditindak.
-            </p>
-          </header>
-        </article>
-        <!-- END Article -->
-      </div>
-      <!-- END Column -->
-    </div>
-  </div>
-  <!-- Footer -->
-  <footer class="text-center font-medium bg-ku py-5 text-white">
-    © 2022 | By
-    <a href="#" class="text-white-500" target="_blank">Siswa Rpl SMKN 2 TRENGGALEK</a>
-  </footer>
-  @include('sweetalert::alert')
 </body>
 
 </html>
+
+
