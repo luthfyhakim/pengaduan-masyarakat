@@ -6,19 +6,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>@yield('title') </title>
 
+  
   @include('includes.masyarakat.style')
+  
+  
 </head>
 
 <body>
-  <div class="flex h-screen bg-gray-50 dark:bg-gray-900" :class="{ 'overflow-hidden': isSideMenuOpen }">
+  
+  @include('includes.masyarakat.navbar')
 
-    <div class="flex flex-col flex-1 w-full">
+<style>
+  body{
+    background: #00384e;
+  }
 
-      @include('includes.masyarakat.navbar')
+  .margin-top{
+    margin-top: 90px;
+  }
+  .margin-bottom{
+    margin-bottom: 90px;
+  }
+  
 
-      @yield('content')
+</style>
+      
+      <div class="container">
+        <div class="margin-bottom margin-top">
+          @yield('content')
 
-      @include('includes.masyarakat.footer')
+        </div>
+      </div>
+
     </div>
   </div>
   @include('sweetalert::alert')

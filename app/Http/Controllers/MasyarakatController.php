@@ -57,6 +57,9 @@ class MasyarakatController extends Controller
         $data = $request->all();
         $data['user_nik']=$nik;
         $data['user_id']=$id;
+        $data['description']=$id;
+        $data['no_telp']=$id;
+        $data['alamat']=$id;
         $data['name']=$name;
         $data['image'] = $request->file('image')->store('assets/laporan', 'public');
 
@@ -77,7 +80,7 @@ class MasyarakatController extends Controller
     public function lihat() {
 
  
-        $user = Auth::user()->pengaduan->get();
+        $user = Auth::user()->pengaduan()->get();
     
         $user = Auth::user()->nik;
 

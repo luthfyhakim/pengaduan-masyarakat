@@ -11,7 +11,7 @@
     </button>
 
     <nav>
-    </nav>
+    </nav class="nav-style">
     <div class="flex justify-center flex-1">
       <a class="inline-flex items-center text-sm mr-5 font-semibold transition-colors duration-150 "
         href="{{ url('user')}}">

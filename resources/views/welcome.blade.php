@@ -143,7 +143,7 @@
         <div class="row">
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <div class="icon"><i class='bx bxs-edit-alt'></i></div>
               <h4 class="title"><a href="">Kirim Laporan</a></h4>
               <p class="description">Tulis laporan keluhan Anda dengan jelas.</p>
             </div>
@@ -151,7 +151,7 @@
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
-              <div class="icon"><i class="bx bx-file"></i></div>
+              <div class="icon"><i class="bx bx-shuffle"></i></div>
               <h4 class="title"><a href="">Proses Verifikasi</a></h4>
               <p class="description">Tunggu sampai laporan Anda di verifikasi oleh admin/petugas.</p>
             </div>
@@ -167,7 +167,7 @@
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
-              <div class="icon"><i class="bx bx-world"></i></div>
+              <div class="icon"><i class='bx bx-check-shield'></i></div>
               <h4 class="title"><a href="">Selesai</a></h4>
               <p class="description">Laporan pengaduan telah selesai ditindak.</p>
             </div>
