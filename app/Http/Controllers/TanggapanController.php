@@ -42,15 +42,13 @@ class TanggapanController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    { 
-        DB::table('pengaduans')->where('id', $request->pengaduan_id)->update([
+    {
+        DB::table('pengaduan')->where('id', $request->pengaduan_id)->update([
             'status'=> $request->status,
         ]);
-        
 
-        $petugas_id = Auth::user()->id;        
+        $petugas_id = Auth::user()->id;
 
-            
         $data = $request->all();
 
         $data['pengaduan_id'] = $request->pengaduan_id;
@@ -70,11 +68,11 @@ class TanggapanController extends Controller
     public function show($id)
     {
         $item = Pengaduan::with([
-            'details', 'user' 
+            'details', 'user'
         ])->findOrFail($id);
 
         return view('pages.admin.tanggapan.add',[
-        'item' => $item
+            'item' => $item
         ]);
     }
 
@@ -98,7 +96,7 @@ class TanggapanController extends Controller
      */
     public function update(Request $request, $id)
     {
-        
+
     }
 
     /**

@@ -9,12 +9,14 @@ class Tanggapan extends Model
 {
     use HasFactory;
 
+    protected $table = 'tanggapan';
+
     protected $fillable = [
         'id', 'pengaduan_id', 'tanggapan', 'petugas_id',
     ];
 
     protected $hidden = [
-    
+
     ];
 
     public function pengaduan()
@@ -24,10 +26,11 @@ class Tanggapan extends Model
 
     public function proses()
     {
-    return $this->hasMany(Pengaduan::class, 'status_id','status');
+        return $this->hasMany(Pengaduan::class, 'status_id','status');
     }
 
-    public function country() {
+    public function country()
+    {
         return $this->hasOne(Pengaduan::class);
     }
 }
