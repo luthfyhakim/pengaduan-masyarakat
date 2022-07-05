@@ -13,6 +13,8 @@
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">Tentang kami</a></li>
           <li><a class="nav-link scrollto " href="#services">Alur</a></li>
+         <li> <a class="nav-btn" href="{{ url('login')}}">Masuk</a></li>
+         <li> <a class="nav-btn" href="{{ url('register')}}">Daftar</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->

@@ -16,28 +16,28 @@
             <div>
                 <x-label for="nik" :value="__('NIK')" />
 
-                <x-input id="nik" class="block mt-1 w-full" type="text" name="nik" :value="old('nik')" required autofocus />
+                <x-input id="nik" class="block mt-1 w-full" type="text" name="nik" :value="old('nik')" placeholder="NIK" required autofocus />
             </div>
 
             <!-- Name -->
             <div class="mt-4">
                 <x-label for="name" :value="__('Name')" />
 
-                <x-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus />
+                <x-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" placeholder="Nama lengkap" required autofocus />
             </div>
 
             <!-- Email Address -->
             <div class="mt-4">
                 <x-label for="email" :value="__('Email')" />
 
-                <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required />
+                <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" placeholder="Email mu" required />
             </div>
 
             <!-- Phone -->
             <div class="mt-4">
                 <x-label for="phone" :value="__('No. HP')" />
 
-                <x-input id="phone" class="block mt-1 w-full" type="text" name="phone" :value="old('phone')" required />
+                <x-input id="phone" class="block mt-1 w-full" type="text" name="phone" :value="old('phone')" placeholder="No handphone" required />
             </div>
 
             <!-- Password -->
