@@ -17,7 +17,7 @@ use RealRashid\SweetAlert\Facades\Alert;
 
 Route::get('/', function () {
     
-    return view('welcome');
+    return view('welcome' , ['data' => '5']);
 });
 
 // Admin/Petugas

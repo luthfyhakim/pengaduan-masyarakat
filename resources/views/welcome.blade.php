@@ -101,7 +101,7 @@
                 <div class="col-md-6 d-md-flex align-items-md-stretch">
                   <div class="count-box">
                     <i class="bi bi-emoji-smile"></i>
-                    <span data-purecounter-start="0" data-purecounter-end="65" data-purecounter-duration="1" class="purecounter"></span>
+                    <span data-purecounter-start="0" data-purecounter-end="{{ $data }}" data-purecounter-duration="1" class="purecounter"></span>
                     <p><strong>Pengguna</strong><br>DAFTAR pengguna APLIKASIKU</p>
                   </div>
                 </div>
