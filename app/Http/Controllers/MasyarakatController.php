@@ -77,7 +77,7 @@ class MasyarakatController extends Controller
     public function lihat() {
 
  
-        $user = Auth::user()->pengaduan->get();
+        $user = Auth::user()->pengaduan()->get();
     
         $user = Auth::user()->nik;
 
