@@ -27,7 +27,7 @@ Route::prefix('admin')
 
 // Masyarakat
 Route::prefix('user')
-    ->middleware(['auth', 'MasyarakatMiddleware'])
+    // ->middleware(['auth', 'MasyarakatMiddleware'])
     ->group(function() {
 		Route::get('/', 'MasyarakatController@index')->name('masyarakat-dashboard');
         Route::resource('pengaduan', 'MasyarakatController');

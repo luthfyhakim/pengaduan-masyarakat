@@ -23,7 +23,7 @@ Dashboard
       </ul>
     </div>
     @endif
-    <form action="{{ route('pengaduan.store')}} " method="POST" enctype="multipart/form-data">
+    <form action="{{ route('pengaduan.store')}}" method="POST" enctype="multipart/form-data">
       @csrf
 
       <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
@@ -45,7 +45,12 @@ Dashboard
           class="mt-4 px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
           Laporkan
         </button>
-
+        <a href="{{ url('/') }}">
+            <button type="button" style="margin-left: 7px"
+              class="mt-4 px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-red-600 border border-transparent rounded-lg active:bg-red-600 hover:bg-red-700 focus:outline-none focus:shadow-outline-purple">
+              Kembali
+            </button>
+        </a>
       </div>
     </form>
 </main>

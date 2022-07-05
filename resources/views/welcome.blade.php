@@ -18,8 +18,8 @@
 
 
   @include('includes.landing.stylesheet')
-  
-  
+
+
   <!-- =======================================================
     * Template Name: Vesperr - v4.7.0
     * Template URL: https://bootstrapmade.com/vesperr-free-bootstrap-template/
@@ -27,11 +27,11 @@
     * License: https://bootstrapmade.com/license/
     ======================================================== -->
   </head>
-  
+
   <body>
-    
+
     @include('includes.landing.navbar')
-  
+
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
@@ -42,7 +42,7 @@
           <h1 data-aos="fade-up">Layanan Laporan Masyarakat Berbasis Online</h1>
           <h2 data-aos="fade-up" data-aos-delay="400">Sampaikan laporan masalah Anda di sini, kami akan memprosesnya dengan cepat , aman dan nyaman.</h2>
           <div data-aos="fade-up" data-aos-delay="800">
-            <a href="{{ url('login')}}" class="btn-get-started scrollto">Laporkan!</a>
+            <a href="{{ url('/user')}}" class="btn-get-started scrollto">Laporkan!</a>
           </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="200">
@@ -65,7 +65,7 @@
         </div>
 
         <div class="row content">
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">  
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
             <p>
               <h3>APLIKASIKU</h3> adalah sistem laporan pengaduan masyarakat yang dibuat untuk memudahkan masyarakat untuk memberikan laporan atau informasi kepada pemerintah
             </p>
@@ -181,9 +181,9 @@
 
     @include('includes.landing.footer')
 
-   
 
-  
+
+
 
 
 
