@@ -40,8 +40,9 @@ Route::prefix('admin')
 
 // masyarakat 1
 
-// Route::get('/laporan', 'MasyarakatController@index')->name('masyarakat-dashboard');
-// Route::post('/laporan', 'MasyarakatController@pengaduan.store')->name('masyarakat-dashboard');
+Route::get('/laporan', 'MasyarakatController@index')->name('masyarakat-dashboard');
+Route::resource('pengaduan', 'MasyarakatController');
+Route::post('/laporan', 'MasyarakatController@simpanlaporan')->name('masyarakat-dashboard');
 
 
 
@@ -50,13 +51,13 @@ Route::prefix('admin')
 
 // opsi 2
 // Masyarakat
-Route::prefix('user')
-    // ->middleware(['auth', 'MasyarakatMiddleware'])
-    ->group(function() {
-				Route::get('/', 'MasyarakatController@index')->name('masyarakat-dashboard');
-                Route::resource('pengaduan', 'MasyarakatController');
-                Route::get('pengaduan', 'MasyarakatController@lihat');
-});
+// Route::prefix('user')
+//     ->middleware(['auth', 'MasyarakatMiddleware'])
+//     ->group(function() {
+// 				Route::get('/', 'MasyarakatController@index')->name('masyarakat-dashboard');
+//                 Route::resource('pengaduan', 'MasyarakatController');
+//                 Route::get('pengaduan', 'MasyarakatController@lihat');
+// });
 
 
 

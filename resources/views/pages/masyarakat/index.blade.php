@@ -83,7 +83,7 @@ Dashboard
             <div class="sent-message">Your message has been sent. Thank you!</div>
           </div>
           <div class="text-center btn-btn-success"><button type="submit">Kirim Laporan</button></div>
-          <button class="btn btn-danger" type="#">kembali</button>
+          <button class="btn btn-danger" onclick="history.back();" >kembali</button>
         </form>
       </div>
 

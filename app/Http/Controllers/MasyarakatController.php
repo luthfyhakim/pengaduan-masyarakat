@@ -69,7 +69,7 @@ class MasyarakatController extends Controller
 
         Alert::success('Berhasil', 'Pengaduan terkirim');
         Pengaduan::create($data);
-        return redirect('laporan');
+        return redirect('/');
     }
 
     /**
@@ -82,9 +82,9 @@ class MasyarakatController extends Controller
     public function lihat() {
 
  
-        $user = Auth::user()->pengaduan()->get();
+        // $user = Auth::user()->pengaduan()->get();
     
-        $user = Auth::user()->nik;
+        // $user = Auth::user()->nik;
 
 
         $items = Pengaduan::all();
