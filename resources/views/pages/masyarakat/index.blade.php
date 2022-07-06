@@ -8,30 +8,30 @@ Dashboard
 <main>
   <section id="contact" class="contact dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input">
     <div class="container ">
-      
-      
+
+
 
     <div class="row">
       <img src="assets/img/logo.svg">
       <h4 class="text-center fw-bold">APLIKASIKU</h4>
-      
+
       <hr>
 
       <div class="col-lg-5 d-flex align-items-stretch">
         <div class="info">
           <h5>lokasi</h5>
           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
-          
+
           <div class="form-group mt-3">
             <input type="text" class="form-control" name="latitude" id="latitude" placeholder="Latitude">
           </div>
-          
+
           <div class="form-group mt-3">
             <input type="text" class="form-control" name="longitude" id="longitude" placeholder="Longitude">
-          </div>          
+          </div>
         </div>
-        
-        
+
+
       </div>
 
       <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
@@ -65,14 +65,14 @@ Dashboard
             <label for="name">laporan</label>
             <textarea class="form-control" name="description" id="descriptiom"rows="5" placeholder="Tulis laporan anda disini " required></textarea>
           </div>
-           
+
           <label for="image" class="block mt-4 text-sm">
             <span class="text-gray-700 dark:text-gray-400">Kirim Foto</span>
             <input
               class="block w-full mt-1 text-sm  form-input"
               type="file" value="{{ old('image')}}" name="image" />
           </label>
-          
+
           <div class="form-group mt-3">
             <label for="name">Alamat Kejadian</label>
             <input type="text" class="form-control" name="alamat" id="alamat" placeholder="Masukkan alamat kejadian" required>
@@ -107,7 +107,7 @@ Dashboard
 
 
 
-{{-- 
+{{--
 
 
 
@@ -118,7 +118,7 @@ Dashboard
       Silahkan ajukan pengaduan Anda!
     </h2>
 
-    
+
 
 
     @if ($errors->any())
@@ -130,11 +130,11 @@ Dashboard
       </ul>
     </div>
     @endif
-    <form action="{{ route('pengaduan.store')}} " method="POST" enctype="multipart/form-data">
+    <form action="{{ route('pengaduan.store')}}" method="POST" enctype="multipart/form-data">
       @csrf
 
-      
-      
+
+
       <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
         <label class="block mt-4 text-sm">
           <span class="text-gray-700 dark:text-gray-400">Nik</span>
@@ -166,7 +166,12 @@ Dashboard
           class="mt-4 px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
           Laporkan
         </button>
-
+        <a href="{{ url('/') }}">
+            <button type="button" style="margin-left: 7px"
+              class="mt-4 px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-red-600 border border-transparent rounded-lg active:bg-red-600 hover:bg-red-700 focus:outline-none focus:shadow-outline-purple">
+              Kembali
+            </button>
+        </a>
       </div>
     </form> --}}
 

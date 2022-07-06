@@ -1,22 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use RealRashid\SweetAlert\Facades\Alert;
-
-
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+use App\Http\Controllers\MasyarakatController;
 
 Route::get('/', function () {
-    
     return view('welcome');
 });
 
@@ -38,24 +25,16 @@ Route::prefix('admin')
         Route::get('pengaduan/cetak/{id}', 'AdminController@pdf');
 });
 
-// masyarakat 1
+Route::get('/adukan', [MasyarakatController::class, 'index']);
+Route::post('/adukan', [MasyarakatController::class, 'store']);
 
-// Route::get('/laporan', 'MasyarakatController@index')->name('masyarakat-dashboard');
-// Route::post('/laporan', 'MasyarakatController@pengaduan.store')->name('masyarakat-dashboard');
-
-
-
-
-
-
-// opsi 2
 // Masyarakat
 Route::prefix('user')
     // ->middleware(['auth', 'MasyarakatMiddleware'])
     ->group(function() {
-				Route::get('/', 'MasyarakatController@index')->name('masyarakat-dashboard');
-                Route::resource('pengaduan', 'MasyarakatController');
-                Route::get('pengaduan', 'MasyarakatController@lihat');
+		Route::get('/', 'MasyarakatController@index')->name('masyarakat-dashboard');
+        Route::resource('pengaduan', 'MasyarakatController');
+        Route::get('pengaduan', 'MasyarakatController@lihat');
 });
 
 

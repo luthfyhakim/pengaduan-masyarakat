@@ -19,11 +19,12 @@
         <span class="ml-4">Dashboard</span>
       </a>
 
-      <a class="inline-flex items-center text-sm mr-5 font-semibold transition-colors duration-150 "
+      {{-- <a class="inline-flex items-center text-sm mr-5 font-semibold transition-colors duration-150 "
         href="{{ url('user/pengaduan')}} ">
 
         <span class="ml-4">Pengaduan</span>
-      </a>
+      </a> --}}
+
       {{-- <div @click.away="open = false" class="relative" x-data="{ open: false }">
         <button @click="open = !open"
           class="inline-flex items-center  text-sm mr-5 font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100">
@@ -79,12 +80,10 @@
       </li>
       <!-- Profile menu -->
       <li class="relative">
-        <button class="align-middle rounded-full focus:shadow-outline-purple focus:outline-none"
-          @click="toggleProfileMenu" @keydown.escape="closeProfileMenu" aria-label="Account" aria-haspopup="true">
-
-          <img class="object-cover w-8 h-8 rounded-full" src="https://shanghai-date.com/uploads/g/t/t/h/q2t34kjldqrqv0pl7ihh.png"
-
-            alt="" aria-hidden="true" />
+        <button class="align-middle rounded-full focus:outline-none">
+          {{-- @click="toggleProfileMenu" @keydown.escape="closeProfileMenu" aria-label="Account" aria-haspopup="true"> --}}
+          <img class="object-cover w-8 h-8 rounded-full" src="https://cdn-icons-png.flaticon.com/512/1177/1177568.png"
+          alt="" aria-hidden="true" />
         </button>
         <template x-if="isProfileMenuOpen">
           <ul x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100"

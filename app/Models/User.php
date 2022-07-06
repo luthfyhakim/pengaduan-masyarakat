@@ -48,7 +48,4 @@ class User extends Authenticatable
     {
         return $this->hasMany(Pengaduan::class, 'user_nik', 'nik');
     }
-    public function pengaduans() {
-    return $this->belongsTo(Transaction::class, 'id', 'id');
-    }
 }
