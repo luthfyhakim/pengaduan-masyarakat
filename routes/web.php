@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MasyarakatController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -24,6 +25,8 @@ Route::prefix('admin')
         Route::get('pengaduan/cetak/{id}', 'AdminController@pdf');
 });
 
+Route::get('/adukan', [MasyarakatController::class, 'index']);
+Route::post('/adukan', [MasyarakatController::class, 'store']);
 
 // Masyarakat
 Route::prefix('user')
