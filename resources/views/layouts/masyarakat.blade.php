@@ -14,7 +14,7 @@
 
 <body>
   
-  @include('includes.masyarakat.navbar')
+  {{-- @include('includes.masyarakat.navbar') --}}
 
 <style>
   body{

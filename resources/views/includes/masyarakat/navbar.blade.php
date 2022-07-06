@@ -75,7 +75,7 @@
         </button>
       </li>
       <li class="flex">
-        <p>{{ Auth::user()->name }} </p>
+        {{-- <p>{{ Auth::user()->name }} </p> --}}
       </li>
       <!-- Profile menu -->
       <li class="relative">

@@ -38,10 +38,20 @@ Route::prefix('admin')
         Route::get('pengaduan/cetak/{id}', 'AdminController@pdf');
 });
 
+// masyarakat 1
 
+// Route::get('/laporan', 'MasyarakatController@index')->name('masyarakat-dashboard');
+// Route::post('/laporan', 'MasyarakatController@pengaduan.store')->name('masyarakat-dashboard');
+
+
+
+
+
+
+// opsi 2
 // Masyarakat
 Route::prefix('user')
-    ->middleware(['auth', 'MasyarakatMiddleware'])
+    // ->middleware(['auth', 'MasyarakatMiddleware'])
     ->group(function() {
 				Route::get('/', 'MasyarakatController@index')->name('masyarakat-dashboard');
                 Route::resource('pengaduan', 'MasyarakatController');

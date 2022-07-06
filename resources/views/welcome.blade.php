@@ -42,7 +42,8 @@
           <h1 data-aos="fade-up">Layanan Laporan Masyarakat Berbasis Online</h1>
           <h2 data-aos="fade-up" data-aos-delay="400">Sampaikan laporan masalah Anda di sini, kami akan memprosesnya dengan cepat , aman dan nyaman.</h2>
           <div data-aos="fade-up" data-aos-delay="800">
-            <a href="{{ url('login')}}" class="btn-get-started scrollto">Laporkan!</a>
+            <a href="/user" class="btn-get-started scrollto">Laporkan!</a>
+            <a href="#services" class="btn-get-started-2 scrollto">Alur laporan</a>
           </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="200">

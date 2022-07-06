@@ -11,8 +11,8 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">Tentang kami</a></li>
-          <li><a class="nav-link scrollto " href="#services">Alur</a></li>
+          <li><a class="nav-link scrollto" href="#about">Tentang kami</a></li>   
+          <div> <a class="border-solid" href="{{ url('login')}}">Masuk</a></div>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->

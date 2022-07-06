@@ -21,10 +21,12 @@ class MasyarakatController extends Controller
      */
     public function index()
     {
-        $user = Auth::user()->nik;
+        // $user = Auth::user()->nik;
         // dd($user);
 
-        return view('pages.masyarakat.index', ['liat'=>$user]);
+        return view('pages.masyarakat.index'
+        // , ['liat'=>$user]
+    );
     }
 
     /**
@@ -67,7 +69,7 @@ class MasyarakatController extends Controller
 
         Alert::success('Berhasil', 'Pengaduan terkirim');
         Pengaduan::create($data);
-        return redirect('user');
+        return redirect('laporan');
     }
 
     /**
