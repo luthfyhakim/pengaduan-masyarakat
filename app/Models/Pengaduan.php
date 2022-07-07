@@ -11,7 +11,7 @@ class Pengaduan extends Model
     use SoftDeletes;
     use HasFactory;
 
-    protected $table = 'pengaduan';
+    protected $table = 'pengaduans';
 
     protected $fillable = [
         'name', 'description', 'image', 'status', 'user_nik', 'user_id' , 'no_telp'

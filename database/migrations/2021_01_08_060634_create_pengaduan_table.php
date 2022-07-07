@@ -18,9 +18,10 @@ class CreatePengaduanTable extends Migration
 
             $table->string('user_nik');
             $table->string('name');
-            $table->integer('user_id');
+            $table->integer('user_id')->default('1');
             $table->text('description');
             $table->string('image');
+            $table->string('no_telp');
             $table->string('status')->default('Belum di Proses');
             $table->softDeletes();
 

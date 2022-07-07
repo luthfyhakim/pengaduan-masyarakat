@@ -10,7 +10,7 @@
     }
 
     hr.solid {
-    border-top: 2px solid #3B82F6;
+    border-top: 2px solid #f63b41;
     }
   </style>
 

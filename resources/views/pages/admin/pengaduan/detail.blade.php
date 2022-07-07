@@ -20,7 +20,7 @@ Detail Pengaduan
 
           <h2>Nama : {{ $ite->name }}</h2>
           <h2 class="mt-4">NIK : {{ $ite->user_nik }}</h2>
-          <h2 class="mt-4">No Telepon : {{ $item->user->phone }}</h2>
+          <h2 class="mt-4">No Telepon : {{ $item->no_telp }}</h2>
           <h2 class="mt-4">Tanggal : {{ $ite->created_at->format('l, d F Y - H:i:s') }}</h2>
           <h2 class="mt-4">Status :
             @if($item->status =='Belum di Proses')
