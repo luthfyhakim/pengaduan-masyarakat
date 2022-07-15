@@ -12,7 +12,7 @@
           <ul class="mt-6">
             <li class="relative px-6 py-3">
               <span
-                class="absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg"
+                class="absolute inset-y-0 left-0 w-1 bg-red-600 rounded-tr-lg rounded-br-lg"
                 aria-hidden="true"
               ></span>
               <a
@@ -97,7 +97,7 @@
           <ul class="mt-6">
             <li class="relative px-6 py-3">
               <span
-                class="absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg"
+                class="absolute inset-y-0 left-0 w-1 bg-red-600 rounded-tr-lg rounded-br-lg"
                 aria-hidden="true"
               ></span>
               <a

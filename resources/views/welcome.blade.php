@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>APLIKASi | Pengaduan Masyarakat</title>
+  <title>APLIKASi | Laporan Siswa</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -18,8 +18,8 @@
 
 
   @include('includes.landing.stylesheet')
-  
-  
+
+
   <!-- =======================================================
     * Template Name: Vesperr - v4.7.0
     * Template URL: https://bootstrapmade.com/vesperr-free-bootstrap-template/
@@ -27,11 +27,11 @@
     * License: https://bootstrapmade.com/license/
     ======================================================== -->
   </head>
-  
+
   <body>
-    
+
     @include('includes.landing.navbar')
-  
+
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
@@ -39,10 +39,12 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-          <h1 data-aos="fade-up">Layanan Laporan Masyarakat Berbasis Online</h1>
+          <h1 data-aos="fade-up">Layanan Laporan Siswa Berbasis Online</h1>
           <h2 data-aos="fade-up" data-aos-delay="400">Sampaikan laporan masalah Anda di sini, kami akan memprosesnya dengan cepat , aman dan nyaman.</h2>
           <div data-aos="fade-up" data-aos-delay="800">
             <a href="{{ url('login')}}" class="btn-get-started scrollto">Laporkan!</a>
+           
+            <a href="#services" class="btn-get-started-2 scrollto">Alur laporan</a>
           </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="200">
@@ -65,19 +67,19 @@
         </div>
 
         <div class="row content">
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">  
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
             <p>
-              <h3>APLIKASIKU</h3> adalah sistem laporan pengaduan masyarakat yang dibuat untuk memudahkan masyarakat untuk memberikan laporan atau informasi kepada pemerintah
+              <h3>APLIKASIKU</h3> adalah sistem laporan pengaduan Siswa yang dibuat untuk memudahkan Siswa untuk memberikan laporan atau informasi kepada pihak petugas sekolah
             </p>
             <ul>
               <h3>Tujuan APLIKASIKU</h3>
-              <li><i class="ri-check-double-line"></i>Memberikan Informasi atau laporan yang jelas kepada pemerintah supaya bisa ditindak lebih lanjut</li>
-              <li><i class="ri-check-double-line"></i>Mempermudah masyarakat untuk berkomunikasi dengan pemerintahan</li>
+              <li><i class="ri-check-double-line"></i>Memberikan Informasi atau laporan yang jelas kepada pihak sekolah supaya bisa ditindak lebih lanjut</li>
+              <li><i class="ri-check-double-line"></i>Mempermudah siswa untuk berkomunikasi dengan pihak sekolah</li>
             </ul>
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="300">
             <p>
-              <h4>APLIKASIKU</h4>merupakan komitmen  kami untuk melayani masyarakat. Dengan hadirnya sistem pelaporan pengaduan online ini, diharapkan setiap suara masyarakat bisa didengar dan ditindaklanjuti oleh pemerintah.
+              <h4>APLIKASIKU</h4>merupakan komitmen  kami untuk melayani siswa. Dengan hadirnya sistem pelaporan pengaduan online ini, diharapkan setiap suara siswa bisa didengar dan ditindaklanjuti oleh pihak sekolah.
             </p>
             <a href="#services" class="btn-learn-more">Tata cara atau alur pengaduan</a>
           </div>
@@ -101,7 +103,7 @@
                 <div class="col-md-6 d-md-flex align-items-md-stretch">
                   <div class="count-box">
                     <i class="bi bi-emoji-smile"></i>
-                    <span data-purecounter-start="0" data-purecounter-duration="1" class="purecounter"></span>
+                    <span data-purecounter-start="0" data-purecounter-end="65" data-purecounter-duration="1" class="purecounter"></span>
                     <p><strong>Pengguna</strong><br>DAFTAR pengguna APLIKASIKU</p>
                   </div>
                 </div>
@@ -181,9 +183,9 @@
 
     @include('includes.landing.footer')
 
-   
 
-  
+
+
 
 
 
@@ -194,5 +196,3 @@
 </body>
 
 </html>
-
-

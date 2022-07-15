@@ -69,17 +69,15 @@ Data Pengaduan
 
               @endif
               <td>
-                <a href="{{ route('pengaduan.show', $item->id)}} "
-                  class="flex items-center justify-between  text-sm font-medium leading-5 text-purple-600 rounded-lg dark:text-gray-400 focus:outline-none focus:shadow-outline-gray"
-                  aria-label="Detail">
+                <button style="background: #18762e; height: 30px; border-radius: 5px; padding: 5px; padding-bottom:10px">
+                  <a href="{{ route('pengaduan.show', $item->id)}} "
+                    class="flex items-center justify-between  text-sm font-medium leading-5 text-white rounded-lg dark:text-white-400 focus:outline-none focus:shadow-outline-gray"
+                    aria-label="Detail">
+                    Lihat
+                    
+                  </a>
 
-                  <svg class="w-5 h-5" aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                  </svg>
-                </a>
+                </button>
               </td>
 
 
