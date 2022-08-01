@@ -59,6 +59,7 @@ class PengaduanController extends Controller
         ])->findOrFail($id);
 
         $tangap = Tanggapan::where('pengaduan_id',$id)->first();
+        // $tangap = Tanggapan::all();
 
         return view('pages.admin.pengaduan.detail',[
             'item' => $item,

@@ -10,7 +10,7 @@ Tanggapan
     <h2 class="my-6 text-2xl text-center font-semibold text-gray-700 dark:text-gray-200">
       Berikan Tanggapan
     </h2>
-    <form action="{{ route('tanggapan.store')}} " method="POST" enctype="multipart/form-data">
+    <form action="/admin/tanggapan" method="POST" enctype="multipart/form-data">
       @csrf
       <input type="hidden" name="pengaduan_id" value="{{ $item->id }} ">
       <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
@@ -20,6 +20,13 @@ Tanggapan
             class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-textarea focus:border-red-400 focus:outline-none focus:shadow-outline-red dark:focus:shadow-outline-gray"
             rows="8" type="text" placeholder="Isi Tanggapan Anda" value="{{ old('description')}}"
             name="tanggapan"></textarea>
+        </label>
+
+        <label for="cover" class="block mt-4 text-sm">
+          <span class="text-gray-700 dark:text-gray-400">Foto</span>
+          <input
+            class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-red-400 focus:outline-none focus:shadow-outline-red dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+            type="file" name="cover" />
         </label>
 
         <label class="block mt-4 text-sm">

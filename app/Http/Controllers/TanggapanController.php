@@ -32,7 +32,8 @@ class TanggapanController extends Controller
      */
     public function create()
     {
-        //
+        // return "tetetet";
+        return view('pages.admin.tanggapan.add');
     }
 
     /**
@@ -46,13 +47,17 @@ class TanggapanController extends Controller
         DB::table('pengaduan')->where('id', $request->pengaduan_id)->update([
             'status'=> $request->status,
         ]);
-
+        
+        
         $petugas_id = Auth::user()->id;
 
+        
         $data = $request->all();
+        // return $request;
 
         $data['pengaduan_id'] = $request->pengaduan_id;
         $data['petugas_id']=$petugas_id;
+        // $data['image'] = $request->file('image')->store('assets/laporan', 'public');
 
         Alert::success('Berhasil', 'Pengaduan berhasil ditanggapi');
         Tanggapan::create($data);

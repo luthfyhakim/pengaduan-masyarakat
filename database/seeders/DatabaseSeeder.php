@@ -19,11 +19,11 @@ class DatabaseSeeder extends Seeder
 
         // akun admin
         DB::table('users')->insert([
-            'nik' => '250404',
-            'name' => 'Admin',
-            'email' => 'admin@gmail.com',
+            'nik' => '11111',
+            'name' => 'wahyuadmin',
+            'email' => 'wahyuadmin@gmail.com',
             'phone' => '085335249308',
-            'password' => Hash::make('admin'),
+            'password' => Hash::make('wahyuadmin'),
             'roles' => 'ADMIN',
         ]);
     }
